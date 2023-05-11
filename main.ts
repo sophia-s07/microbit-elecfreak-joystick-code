@@ -23,7 +23,7 @@ basic.forever(function () {
     button()
     if (item) {
         basic.showNumber(item)
-        radio.sendNumber(1)
+        radio.sendNumber(item)
     } else if (pins.analogReadPin(AnalogPin.P0) < 400) {
         basic.showString("-X")
     } else if (pins.analogReadPin(AnalogPin.P0) > 600) {
